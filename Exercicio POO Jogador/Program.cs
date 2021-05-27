@@ -13,12 +13,13 @@ namespace Exercicio_POO_Jogador
             {
 
                 Console.WriteLine($@"
-=========================================
+|=======================================|
 |   Em qual posição você se enquadra:   |
+|=======================================|
 |       A - ataque                      |
 |       D - Defesa                      |
-|       M - Meio - Campo                |
-=========================================
+|       M - Meio-Campo                  |
+|=======================================|
             ");
 
                 string opcoes = Console.ReadLine().ToLower();

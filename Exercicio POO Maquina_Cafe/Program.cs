@@ -9,11 +9,12 @@ namespace Exercicio_POO_Maquina_Cafe
 
         static void menu_recomecar(){
             Console.WriteLine($@"
-=================================
+|===============================|
 |    Gostaria de um novo café?  |
+|===============================|
 |        S - sim                |
 |        N - não                |
-=================================
+|===============================|
             ");
             string resposta = Console.ReadLine().ToLower();
             if (resposta == "s")
@@ -42,18 +43,21 @@ namespace Exercicio_POO_Maquina_Cafe
 
                 if (opcoes_2 == "s")
                 {
-                   Console.WriteLine("Qual a quantidade de açúcar que deseja no café?");
+                   Console.Clear();
+                   Console.WriteLine("Qual a quantidade de açúcar que deseja no café? (informe a quantidade em gramas)");
                    int quantidade_acucar = int.Parse(Console.ReadLine());
                    ma.Fazer_Cafe(quantidade_acucar);
                    menu_recomecar(); 
                 }else
                 {
+                    Console.Clear();
                     ma.Fazer_Cafe();
                     menu_recomecar();
                 }
                     break;
                 
                 case "s":
+                    Console.Clear();
                     Console.WriteLine("Estamos Fazendo seu café, aguarde um instante!");
                     menu_recomecar();
                     break;

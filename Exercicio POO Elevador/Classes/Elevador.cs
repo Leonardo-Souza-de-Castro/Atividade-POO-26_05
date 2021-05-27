@@ -14,11 +14,19 @@ namespace Exercicio_POO_Elevador.Classes
 
         public int total_andares = 5;
 
+        public void Info_Elevador(){
+            Console.WriteLine("Quantos andares tem o prédio?");
+            total_andares = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Qual o maximo de coisas neste elevador");
+            maximo = int.Parse(Console.ReadLine());
+        }
+        
         public void Entrar()
         {
-            Console.WriteLine("Quantas Pessoas Vão entrar?");
+            Console.WriteLine("Quantas coisas vão entrar?");
             resposta = int.Parse(Console.ReadLine());
-            if (resposta <= 8)
+            if (resposta <= maximo)
             {
                 quantidade = quantidade + resposta;
                 if (quantidade == maximo)
@@ -37,7 +45,7 @@ namespace Exercicio_POO_Elevador.Classes
 
         public void Sair()
         {
-            Console.WriteLine("Quantas pessoas vão sair?");
+            Console.WriteLine("Quantas coisas vão sair?");
             resposta = int.Parse(Console.ReadLine());
 
             if (maximo > 0 && quantidade > 0)

@@ -14,23 +14,27 @@ namespace Exercicio_POO_Elevador
             Elevador_de_Servico se = new Elevador_de_Servico();
 
             Console.WriteLine($@"
-Qual elevador você vai usar?
-    1 - Elevador Social
-    2 - Elevador de Serviço            
+ Qual elevador você vai usar?
+     1 - Elevador Social
+     2 - Elevador de Serviço            
 ");
             string elevadores = Console.ReadLine();
 
             switch (elevadores)
             {
                 case "1":
+                    s.Info_Elevador();
                     do
                     {
                         Console.WriteLine($@"
-O que faremos hoje?
-    S - Subir
-    D - Descer
-    E - Entrar
-    X - Sair
+|=======================| 
+|  O que faremos hoje?  |
+|-----------------------|
+|     S - Subir         |
+|     D - Descer        |
+|     E - Entrar Caixas |
+|     X - Sair Caixas   |
+|=======================|
             ");
 
                         opcoes = Console.ReadLine().ToLower();
@@ -65,14 +69,18 @@ O que faremos hoje?
                     } while (refazer);
                     break;
                 case "2":
+                    s.Info_Elevador();
                     do
                     {
                         Console.WriteLine($@"
-O que faremos hoje?
-    S - Subir
-    D - Descer
-    E - Entrar Caixas
-    X - Sair Caixas
+|=======================| 
+|  O que faremos hoje?  |
+|-----------------------|
+|     S - Subir         |
+|     D - Descer        |
+|     E - Entrar Caixas |
+|     X - Sair Caixas   |
+|=======================|
             ");
 
                         opcoes = Console.ReadLine().ToLower();
@@ -114,9 +122,12 @@ O que faremos hoje?
         static void Retornar_menu()
         {
             Console.WriteLine($@"
-Gostaria de retornar ao menu?
-    S - Sim
-    N - Não
+|===============================|
+| Gostaria de retornar ao menu? |
+|-------------------------------|
+|           S - Sim             |
+|           N - Não             |
+|===============================|
             ");
 
             string resposta = Console.ReadLine().ToLower();
