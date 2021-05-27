@@ -32,8 +32,8 @@ namespace Exercicio_POO_Elevador
 |-----------------------|
 |     S - Subir         |
 |     D - Descer        |
-|     E - Entrar Caixas |
-|     X - Sair Caixas   |
+|     E - Entrar        |
+|     X - Sair          |
 |=======================|
             ");
 
@@ -42,21 +42,25 @@ namespace Exercicio_POO_Elevador
                         switch (opcoes)
                         {
                             case "s":
+                                Console.Clear();
                                 s.Subir();
                                 Retornar_menu();
                                 break;
 
                             case "d":
+                                Console.Clear();
                                 s.Descer();
                                 Retornar_menu();
                                 break;
 
                             case "e":
+                                Console.Clear();
                                 s.Entrar();
                                 Retornar_menu();
                                 break;
 
                             case "x":
+                                Console.Clear();
                                 s.Sair();
                                 Retornar_menu();
                                 break;
@@ -87,21 +91,25 @@ namespace Exercicio_POO_Elevador
                         switch (opcoes)
                         {
                             case "s":
+                                Console.Clear();
                                 se.Subir();
                                 Retornar_menu();
                                 break;
 
                             case "d":
+                                Console.Clear();
                                 se.Descer();
                                 Retornar_menu();
                                 break;
 
                             case "e":
+                                Console.Clear();
                                 se.Entrar_caixas();
                                 Retornar_menu();
                                 break;
 
                             case "x":
+                                Console.Clear();
                                 se.Sair_Caixas();
                                 Retornar_menu();
                                 break;

@@ -34,7 +34,7 @@ namespace Exercicio_POO_Elevador.Classes
                     Console.WriteLine("Elevador cheio");
                 }
                 maximo = maximo - resposta;
-                Console.WriteLine($@"Entraram {resposta} pessoas");
+                Console.WriteLine($@"Entraram {resposta}");
             }
             else
             {
@@ -52,7 +52,7 @@ namespace Exercicio_POO_Elevador.Classes
             {
                 quantidade = quantidade - resposta;
                 maximo = maximo + resposta;
-                Console.WriteLine($@"Sairam {resposta} pessoas");
+                Console.WriteLine($@"Sairam {resposta}");
             }
             else
             {
@@ -64,6 +64,7 @@ namespace Exercicio_POO_Elevador.Classes
         {
             Console.WriteLine("Para qual andar deseja ir?");
             resposta = int.Parse(Console.ReadLine());
+            Console.Clear();
             if (andar_atual <= total_andares && quantidade > 0)
             {
                 for (var c = 0; c < (resposta - andar_atual); quantidade++)
@@ -87,7 +88,7 @@ namespace Exercicio_POO_Elevador.Classes
         {
             Console.WriteLine("Quantos andares você vai descer?");
             resposta = int.Parse(Console.ReadLine());
-
+            Console.Clear();
             if (andar_atual > 0 && quantidade > 0)
             {
                 andar_atual = andar_atual - resposta;
